@@ -1,314 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Anupom Das | Medical Doctor Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Anupom Das</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container nav-container">
-      <div class="logo">
-        <h1>Dr. Anupom Das</h1>
-        <p>Medical Doctor | Researcher | Medical Educator</p>
-      </div>
+<header>
+  <div class="container header-flex">
+    <h1>Dr. Anupom Das</h1>
 
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#consultancy">Consultancy</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <div>
+      <input type="text" id="searchBox" placeholder="Search...">
+      <button onclick="toggleLang()">🌐 EN / বাংলা</button>
     </div>
-  </header>
+  </div>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <span class="badge">Professional Medical Portfolio</span>
-        <h2>Practicing Medicine, Advancing Research, and Teaching Future Doctors</h2>
-        <p>
-          A professional website for showcasing clinical work, medical research,
-          teaching activities, academic background, and consultancy information.
-        </p>
-        <div class="hero-buttons">
-          <a href="#consultancy" class="btn primary-btn">View Consultancy</a>
-          <a href="#contact" class="btn secondary-btn">Contact</a>
-        </div>
-      </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#research">Research</a>
+    <a href="#consultation">Consultation</a>
+  </nav>
+</header>
 
-      <div class="hero-card">
-        <h3>Professional Highlights</h3>
-        <ul>
-          <li>Clinical Medicine & Patient Care</li>
-          <li>Medical Research & Publications</li>
-          <li>Medical Teaching & Mentorship</li>
-          <li>Public Health & Epidemiology</li>
-          <li>Digital Health & Medical Informatics</li>
-        </ul>
-      </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h2 data-en="Consultant Physician & Medical Educator"
+        data-bn="মেডিসিন বিশেষজ্ঞ ও মেডিকেল শিক্ষক">
+        Consultant Physician & Medical Educator
+    </h2>
+
+    <p data-en="Providing patient-centered care in government and private hospitals, and actively involved in teaching undergraduate medical students."
+       data-bn="সরকারি ও বেসরকারি হাসপাতালে রোগীসেবা প্রদান এবং মেডিকেল শিক্ষার্থীদের শিক্ষা কার্যক্রমে সক্রিয়ভাবে যুক্ত।">
+    </p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container about">
+    <img src="photo.jpg" alt="Doctor Photo">
+
+    <div>
+      <h2>About</h2>
+
+      <p data-en="Dr. Anupom Das is a medical doctor working in a government tertiary care hospital in Jashore. He provides clinical care to patients and is also actively involved in teaching undergraduate medical students."
+         data-bn="ডা. অনুপম দাস যশোরের একটি সরকারি তৃতীয় স্তরের হাসপাতালে কর্মরত একজন চিকিৎসক। তিনি রোগীদের চিকিৎসা প্রদান করেন এবং একই সাথে মেডিকেল শিক্ষার্থীদের পাঠদান করেন।">
+      </p>
+
+      <p data-en="He practices medicine in both government and private settings and focuses on patient-centered, evidence-based care."
+         data-bn="তিনি সরকারি ও বেসরকারি উভয় ক্ষেত্রেই চিকিৎসা প্রদান করেন এবং রোগীকেন্দ্রিক ও প্রমাণভিত্তিক চিকিৎসার ওপর গুরুত্ব দেন।">
+      </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- About -->
-  <section id="about" class="section light-section">
-    <div class="container">
-      <div class="section-title">
-        <h2>About the Doctor</h2>
-        <p>Professional profile and background</p>
-      </div>
+<!-- EDUCATION -->
+<section id="education" class="section light">
+  <div class="container">
+    <h2>Education</h2>
 
-      <div class="about-grid">
-        <div class="card">
-          <h3>Biography</h3>
-          <p>
-            Dr. Anupom Das is a medical doctor with experience in clinical medicine,
-            epidemiology, public health, research, and medical education. His professional
-            work focuses on improving patient care, supporting evidence-based practice,
-            and contributing to healthcare systems through research and innovation.
-          </p>
-        </div>
+    <ul>
+      <li>MBBS – Medical College</li>
+      <li>Postgraduate Training in Medicine</li>
+    </ul>
+  </div>
+</section>
 
-        <div class="card">
-          <h3>Professional Interests</h3>
-          <ul class="list">
-            <li>General Clinical Medicine</li>
-            <li>Medical Research</li>
-            <li>Public Health & Epidemiology</li>
-            <li>Medical Education</li>
-            <li>Digital Health & Informatics</li>
-          </ul>
-        </div>
-      </div>
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="container">
+    <h2>Training & Skills</h2>
+
+    <div class="skills">
+      <span>Internal Medicine</span>
+      <span>Clinical Diagnosis</span>
+      <span>Patient Counseling</span>
+      <span>Medical Teaching</span>
+      <span>Emergency Care</span>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Education -->
-  <section id="education" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Education & Training</h2>
-        <p>Academic qualifications and professional development</p>
+<!-- RESEARCH -->
+<section id="research" class="section light">
+  <div class="container">
+    <h2>Research</h2>
+
+    <p data-en="Interested in clinical medicine, public health, and medical education research."
+       data-bn="ক্লিনিক্যাল মেডিসিন, জনস্বাস্থ্য এবং মেডিকেল শিক্ষা বিষয়ক গবেষণায় আগ্রহী।">
+    </p>
+  </div>
+</section>
+
+<!-- CONSULTATION -->
+<section id="consultation" class="section">
+  <div class="container">
+    <h2>Consultation Information</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Government Hospital</h3>
+        <p><strong>Time:</strong> 8:00 AM – 2:30 PM</p>
+        <p><strong>Location:</strong> Jashore Government Hospital</p>
+        <p><strong>Booking:</strong> On-site registration</p>
       </div>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Joint Master’s in Health Informatics</h3>
-          <span>Karolinska Institutet & Stockholm University | 2025–2027</span>
-          <p>
-            Advanced study in health informatics, healthcare systems, digital health,
-            information security, and healthcare data applications.
-          </p>
-        </div>
-
-        <div class="timeline-item">
-          <h3>Field Epidemiology Training Program (Intermediate)</h3>
-          <span>Bangladesh | 2022–2023</span>
-          <p>
-            Specialized training in epidemiology, disease surveillance, outbreak investigation,
-            and emergency public health response.
-          </p>
-        </div>
-
-        <div class="timeline-item">
-          <h3>Bachelor of Medicine and Surgery (MBBS)</h3>
-          <span>Rangpur Medical College | 2009–2014</span>
-          <p>
-            Medical training in medicine, surgery, pediatrics, obstetrics & gynecology,
-            psychiatry, and community medicine.
-          </p>
-        </div>
+      <div class="card">
+        <h3>Private Hospital</h3>
+        <p><strong>Time:</strong> 3:30 PM – 8:00 PM</p>
+        <p><strong>Location:</strong> Private Hospital, Jashore</p>
+        <p><strong>Booking:</strong> Phone / Reception</p>
       </div>
+
+      <div class="card">
+        <h3>Contact & Payment</h3>
+        <p><strong>Phone:</strong> +880XXXXXXXXXX</p>
+        <p><strong>Payment:</strong> Cash / bKash / Card</p>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Experience -->
-  <section id="experience" class="section light-section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Work Experience</h2>
-        <p>Clinical, academic, and research experiences</p>
-      </div>
+<footer>
+  <p>© 2026 Dr. Anupom Das</p>
+</footer>
 
-      <div class="cards-grid">
-        <div class="card">
-          <h3>Medical Officer</h3>
-          <span>Ministry of Health | 2020–2025</span>
-          <p>
-            Worked in clinical management, patient care, public health response,
-            disease surveillance, and healthcare system support.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Clinical Research Physician</h3>
-          <span>BRAC School of Public Health | 2018–2020</span>
-          <p>
-            Contributed to clinical and public health research, data management,
-            field supervision, and research reporting.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Research Physician</h3>
-          <span>Johns Hopkins JiVitA Project | 2017–2018</span>
-          <p>
-            Worked in maternal and child health research, clinical trials,
-            field monitoring, and research quality assurance.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Research -->
-  <section id="research" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Research Experience</h2>
-        <p>Areas of academic and scientific contribution</p>
-      </div>
-
-      <div class="cards-grid">
-        <div class="card">
-          <h3>Research Areas</h3>
-          <ul class="list">
-            <li>Clinical Medicine</li>
-            <li>Public Health</li>
-            <li>Nutrition & Adolescent Health</li>
-            <li>COVID-19 & Vaccine Equity</li>
-            <li>Non-Communicable Disease Surveillance</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Selected Academic Work</h3>
-          <ul class="list">
-            <li>Iron deficiency and nutrition-related studies</li>
-            <li>COVID-19 vaccine equity in low-resource settings</li>
-            <li>Community-based public health research</li>
-            <li>Population health surveillance and data systems</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Teaching -->
-  <section id="teaching" class="section light-section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Teaching & Academic Mentorship</h2>
-        <p>Educational and student-focused professional work</p>
-      </div>
-
-      <div class="about-grid">
-        <div class="card">
-          <h3>Teaching Focus</h3>
-          <p>
-            Engaged in teaching and mentoring medical students and junior health professionals
-            in clinical reasoning, public health, epidemiology, and evidence-based medicine.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Academic Interests</h3>
-          <ul class="list">
-            <li>Medical Student Teaching</li>
-            <li>Clinical Case-Based Learning</li>
-            <li>Research Mentorship</li>
-            <li>Public Health Training</li>
-            <li>Digital Learning in Medicine</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Consultancy -->
-  <section id="consultancy" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Consultancy Information</h2>
-        <p>Consultation details and booking information</p>
-      </div>
-
-      <div class="consultancy-grid">
-        <div class="card">
-          <h3>Consultation Time</h3>
-          <p><strong>Days:</strong> Monday – Friday</p>
-          <p><strong>Hours:</strong> 5:00 PM – 9:00 PM</p>
-          <p><strong>Weekend:</strong> Saturday (by prior appointment)</p>
-        </div>
-
-        <div class="card">
-          <h3>Consultation Place</h3>
-          <p><strong>Clinic:</strong> Doctor’s Chamber / Consultation Center</p>
-          <p><strong>Location:</strong> Stockholm / To be updated</p>
-          <p><strong>Online:</strong> Available upon request</p>
-        </div>
-
-        <div class="card">
-          <h3>Booking Method</h3>
-          <p><strong>Phone:</strong> +46 76 741 7088</p>
-          <p><strong>Email:</strong> anupom.das@stud.ki.se</p>
-          <p><strong>Method:</strong> Phone call / Email / Future online booking system</p>
-        </div>
-      </div>
-
-      <div class="booking-note">
-        <p>
-          <strong>Note:</strong> This website currently provides consultancy information only.
-          Online appointment booking can be added later.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section light-section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Professional communication and inquiries</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="card">
-          <h3>Contact Details</h3>
-          <p><strong>Email:</strong> anupom.das@stud.ki.se</p>
-          <p><strong>Phone:</strong> +46 76 741 7088</p>
-          <p><strong>Location:</strong> Stockholm, Sweden</p>
-        </div>
-
-        <div class="card">
-          <h3>Send a Message</h3>
-          <form class="contact-form">
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-            <input type="text" placeholder="Subject" />
-            <textarea rows="5" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn primary-btn">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 Dr. Anupom Das | Medical Doctor Portfolio</p>
-    </div>
-  </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
