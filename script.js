@@ -21,22 +21,3 @@ function toggleLang() {
     langBtn.innerText = isEnglish ? "🌐 EN / বাংলা" : "🌐 বাংলা / EN";
   }
 }
-
-// Search filter
-const searchBox = document.getElementById("searchBox");
-
-if (searchBox) {
-  searchBox.addEventListener("input", function () {
-    const input = this.value.toLowerCase().trim();
-    const sections = document.querySelectorAll(".searchable");
-
-    sections.forEach((section) => {
-      const text = section.innerText.toLowerCase();
-      if (text.includes(input) || input === "") {
-        section.classList.remove("hidden-search");
-      } else {
-        section.classList.add("hidden-search");
-      }
-    });
-  });
-}
